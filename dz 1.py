@@ -30,7 +30,10 @@ class cat:
         if self.live + cot > 9:
             print("Error live")
             return
-        self.age += cot
+        self.live += cot
+        if self.live + cot < 1:
+            print(f"кіт {self.name} пішов")
+        self.live += cot
 
 
 
@@ -38,7 +41,7 @@ Barni = cat(name="Barni", live=4)
 print(Barni.age)
 Barni.grow(6)
 Tom = cat(name="Tom", age=5)
-Tom.evil(2)
+Tom.evil(-8)
 print(Barni)
 print(Tom)
 print(cat.count_of_cat)
